@@ -3,7 +3,7 @@ An optimized implementation of AVL BST in C++
 
 ## Introduction 
 In traditional implementations of an AVL BST,
-the height and balance of each Node is to be found
+the height and balance of each Node is calculated
 whenever a new Node is added to the Tree. This project
 aims at optimizing that approach.
 
