@@ -80,7 +80,7 @@ if (!currentNode->right)
 
 // If both the children exist, simply update the current Node's
 // heights
-else
+if (currentNode->left && currentNode->right)
 {
     // Increment the greater of left child's heights by 1 and assign 
     // to current Node's leftHeight
