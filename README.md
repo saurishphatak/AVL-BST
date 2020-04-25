@@ -24,7 +24,7 @@ Each time a new Node is added in the Tree,
 the heights and balance of the current Node
 are updated.
 
-```
+```c++
 // If the left child exists
 if (currentNode->left)
 {
@@ -49,7 +49,7 @@ currentNode->balance = currentNode->rightHeight - currentNode->leftHeight;
 If the balance of the current Node is -2 or +2,
 rebalance the Tree.
 
-```
+```c++
 // If the currentNode's balance is -2 or +2
 if (+2 == currentNode->balance || -2 == currentNode->balance)
 {
@@ -63,7 +63,7 @@ Each time a Node is deleted from the Tree,
 the heights and balance of its parent Node
 are updated and rebalancing is performed (if needed).
 
-```
+```c++
 // If the Left Child has been deleted and returned nullptr
 if (!currentNode->left)
 {
@@ -99,7 +99,7 @@ currentNode->balance = currentNode->rightHeight - currentNode->leftHeight;
 Heights and balance of the current Node and 
 it's child are updated during the rotation.
 
-```
+```c++
 // Function to perform Left Rotation
 Node *rotateLeft(Node *currentNode)
 {
